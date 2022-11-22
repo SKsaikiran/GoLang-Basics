@@ -1,13 +1,7 @@
 ### 1.Printing Statement
 
 ```
-package main
-import "fmt"
-// Main function
-func main() 
-{
      fmt.Println("!... HY LEARN GO ...!")    
-}
 ```
 **Here i am trying to run a basic code to print "!... HY LEARN GO ...!"** 
 
