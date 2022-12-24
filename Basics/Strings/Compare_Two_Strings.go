@@ -11,7 +11,7 @@ func main() {
   // create three strings
   string1 := "GOlang"
   string2 := "GOlang Pro"
-  string3 := "GO"
+  string3 := "GOlang"
 
   // compare strings
   fmt.Println(strings.Compare(string1, string2))  // -1
