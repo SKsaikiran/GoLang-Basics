@@ -6,7 +6,8 @@ import (
   "strings"
 )
 
-func main() {
+func main() 
+{
 
   text := "Go Programming"
   substring1 := "Go"
