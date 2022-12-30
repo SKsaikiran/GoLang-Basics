@@ -28,3 +28,8 @@ func main() {
   fmt.Println(message2)
 }
 ```
+### Output
+```
+Hello,
+Welcome to Programiz
+```
