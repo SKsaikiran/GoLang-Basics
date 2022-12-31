@@ -33,3 +33,21 @@ func main() {
 Hello,
 Welcome to Programiz
 ```
+### Golang String using backtick (` `)
+  In **Go**, we can also represent strings using the tick mark notation. For example,
+```
+Program to represent a string with a backtick
+
+package main
+import "fmt"
+
+func main() {
+
+  //  represent string with `  `    
+  message := `I love Go Programming`
+    
+  fmt.Println(message)
+}
+```
+### Output
+`` I love Go Programming ``
