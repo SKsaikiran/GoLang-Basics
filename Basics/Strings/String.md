@@ -51,3 +51,28 @@ func main() {
 ```
 ### Output
 `` I love Go Programming ``
+### Access Characters of String in Go
+We know that a string is a sequence of characters. Hence, we can access individual characters of a string.
+
+Just like the **Go array**, we use index numbers to access string characters. For example,
+```
+// Program to access individual character of string
+
+package main
+import "fmt"
+ 
+func main() {
+
+  // create and initialize a string
+  name := "Programiz"
+
+  // access first character
+  fmt.Printf("%c\n", name[0])  // P
+
+  // access fourth character
+  fmt.Printf("%c\n", name[3])  // g
+
+  // access last character
+  fmt.Printf("%c", name[8])  // z
+}
+```
