@@ -126,3 +126,8 @@ func main() {
   fmt.Println(result)
 }
 ```
+### Output
+`` I love Go programming ``
+
+Here, we have used the ``+`` operator to join three strings: ``message1``,`` " "``, and ``message2``.
+
