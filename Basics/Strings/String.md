@@ -76,3 +76,53 @@ func main() {
   fmt.Printf("%c", name[8])  // z
 }
 ```
+Remember a string index starts from **0**, not **1**.
+
+Hence,
+- `` name[0] ``- returns the first character of the string
+- `` name[3] ``- returns the fourth character
+- `` name[8] ``- returns the ninth (last) character
+
+### Find the length of a string
+In Go, we use the `` len() `` function to find the length of a string. For example,
+```
+// Program to count the length of a string
+
+package main
+import "fmt"
+ 
+func main() {
+ 
+  // create string
+  message := "Welcome to Programiz"
+    
+  // use len() function to count length
+  stringLength := len(message)
+
+  fmt.Println("Length of a string is:", len(stringLength))
+ 
+}
+```
+#### Output
+`` Length of a string is: 20 ``
+
+Here,`` len() `` returns the number of characters present inside the string.
+
+### Join Two Strings Together
+In Go, we can use the ``+`` operator to join (concatenates) strings together. For example,
+```
+// Program to concatenate two strings
+
+package main
+import "fmt"
+
+func main() {  
+  message1 := "I love"
+  message2 := "Go programming"
+    
+  // concatenation using + operator
+  result := message1 + " " + message2
+
+  fmt.Println(result)
+}
+```
