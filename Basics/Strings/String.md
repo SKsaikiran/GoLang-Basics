@@ -130,4 +130,10 @@ func main() {
 `` I love Go programming ``
 
 Here, we have used the ``+`` operator to join three strings: ``message1``,``" "``, and ``message2``.
-
+### Golang String Methods
+In Go, the strings package provides various methods that can be used to perform different operations on strings.
+|Functions|Descriptions|
+|:-------|:-------|
+|``Compare()``| Compares two strings  |
+|``Contains()``| Checks if a substring is present inside a string  |
+|``Replaces()``| Replaces a substring with another substring  |
