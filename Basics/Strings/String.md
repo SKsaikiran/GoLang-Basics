@@ -137,3 +137,8 @@ In Go, the strings package provides various methods that can be used to perform 
 |``Compare()``| Compares two strings  |
 |``Contains()``| Checks if a substring is present inside a string  |
 |``Replaces()``| Replaces a substring with another substring  |
+|``ToLower() ``|  converts a string to lowercase |
+|``ToUpper()``|  converts a string to uppercase |
+|``Split()``|  splits a string into multiple substrings |
+
+
