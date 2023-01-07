@@ -1,3 +1,5 @@
+<h1 align="center">Strings</h1>
+
 A string is a sequence of characters. For example, **"Hello"** is a string that includes characters: **H , e , l , l , o.**
 
 We use double quotes to represent strings in Go. For example,
