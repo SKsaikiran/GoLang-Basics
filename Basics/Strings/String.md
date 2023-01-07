@@ -271,3 +271,104 @@ strings.Replace("Programiz", "r", "R", 2)
 
 // Output: PRogRamiz
 ```
+-----------------------------------------------------------------
+## Change Case of Go String
+The strings package provides
+
+- ``ToUpper()`` - to change string to uppercase
+- ``ToLower()`` - to change string to lowercase
+We use the ``ToUpper()`` function to change the given string to uppercase. The function ``ToUpper()`` is provided by the package ``strings``. For example,
+```
+// Program to convert a string to uppercaseand lowercase
+
+package main
+import (
+  "fmt"
+  "strings"
+)
+
+func main() {
+
+  text1 := "go is fun to learn"
+
+  // convert to uppercase
+  text1 = strings.ToUpper(text1)
+
+  fmt.Println(text1)
+
+  text2 := "I LOVE GOLANG"
+
+  // convert to lowercase
+  text2 = strings.ToLower(text2)
+  fmt.Println(text2)
+}
+```
+### Output
+```
+GO IS FUN TO LEARN
+i love golang
+```
+-------------------------------------------------------------------------------
+## Split Strings in Golang
+In Go, we can split a string into multiple substrings using the ``Split()`` method. For example,
+```
+package main
+import (
+  "fmt"
+  "strings"
+)
+
+func main() {
+  var message = "I Love Golang"
+  
+  // split string from space " "
+  splittedString := strings.Split(message, " ")
+
+  fmt.Println(splittedString)
+}
+
+// Output: [I Love Golang]
+```
+*Notice the code,*
+``strings.Split(message, " ")``
+Here, we split the string at ``" "``. Hence, we get individual words as output.
+
+The ``Split()`` method returns a slice of all the substrings. In our example, ``[I Love Golang]`` is a slice.
+
+-------------------------------------------
+<h1 align="center">Other String Operations</h1>
+<details>
+<summary>Compare Golang Strings using ==</summary>
+<br>
+In Go, we can also use the == operator to compare two strings. For example,
+  
+ ```
+  // Program to compare two strings using == operator
+
+package main
+import "fmt"
+
+func main() {
+
+// create 2 strings
+  string1 := "Programiz"
+  string2 := "programiz"
+
+  // compare two strings
+  result := string1 == string2
+
+  fmt.Println(result)
+}
+
+// Output: false
+  ```
+  
+  The ``==`` operator returns
+
+- ``true`` - if two strings are equal
+- ``false`` - if two strings are not equal
+  
+  ```
+  Note: The ``==`` operator is case sensitive. Hence, ``Programiz`` and ``programiz`` are not equal.
+  ```
+</details>
