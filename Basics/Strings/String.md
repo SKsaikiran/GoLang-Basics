@@ -9,7 +9,7 @@ var name1 = "Go Programming"
 name2 := "Go Programming" 
 ```
 Here, both ``name1`` and ``name2`` are strings with the value **"Go Programming"**.
-### Example: Golang String
+## Example: Golang String
 ```
 // Program to create a string in Golang
 
@@ -33,7 +33,9 @@ func main() {
 Hello,
 Welcome to Programiz
 ```
-### Golang String using backtick (` `)
+
+---------------------------------------------------
+## Golang String using backtick (` `)
   In **Go**, we can also represent strings using the tick mark notation. For example,
 ```
 Program to represent a string with a backtick
@@ -51,7 +53,9 @@ func main() {
 ```
 ### Output
 `` I love Go Programming ``
-### Access Characters of String in Go
+
+--------------------------------------------------------------------------
+## Access Characters of String in Go
 We know that a string is a sequence of characters. Hence, we can access individual characters of a string.
 
 Just like the **Go array**, we use index numbers to access string characters. For example,
@@ -82,8 +86,8 @@ Hence,
 - `` name[0] ``- returns the first character of the string
 - `` name[3] ``- returns the fourth character
 - `` name[8] ``- returns the ninth (last) character
-
-### Find the length of a string
+---------------------------------------------------------------------------
+## Find the length of a string
 In Go, we use the `` len() `` function to find the length of a string. For example,
 ```
 // Program to count the length of a string
@@ -108,7 +112,9 @@ func main() {
 
 Here,`` len() `` returns the number of characters present inside the string.
 
-### Join Two Strings Together
+-------------------------------------------------------------------------
+
+## Join Two Strings Together
 In Go, we can use the ``+`` operator to join (concatenates) strings together. For example,
 ```
 // Program to concatenate two strings
@@ -130,7 +136,7 @@ func main() {
 `` I love Go programming ``
 
 Here, we have used the ``+`` operator to join three strings: ``message1``,``" "``, and ``message2``.
-### Golang String Methods
+## Golang String Methods
 In Go, the strings package provides various methods that can be used to perform different operations on strings.
 |Functions|Descriptions|
 |:-------|:-------|
@@ -141,4 +147,83 @@ In Go, the strings package provides various methods that can be used to perform 
 |``ToUpper()``|  converts a string to uppercase |
 |``Split()``|  splits a string into multiple substrings |
 
+To use these methods, we must first import the strings package in our code.
+```
+import (
+  "fmt"
+  "strings"
+)
+```
+----------------------------------------
+## Compare Two Strings in Go
+We use the ``Compare()`` of the ``strings`` package to compare two strings. For example,
+```
+// Program to compare string using Compare()
 
+package main
+import (
+  "fmt"
+  "strings"
+)
+
+func main() {
+
+  // create three strings
+  string1 := "Programiz"
+  string2 := "Programiz Pro"
+  string3 := "Programiz"
+
+  // compare strings
+  fmt.Println(strings.Compare(string1, string2))  // -1
+  fmt.Println(strings.Compare(string2, string3))  // 1
+  fmt.Println(strings.Compare(string1, string3))  // 0
+
+}
+```
+Here, we have used
+``strings.Compare(string1, string2)``
+To compare two strings: ``string1`` and ``string2``. The function returns:
+- -1 because string1 is smaller than string2
+- 1 because string2 is greater than string3
+- 0 because string1 and string3 are equal
+```
+**Note**: We have imported ``strings`` at the beginning of the program and used ``strings.Compare()`` not ``Compare()``.
+```
+---------------------------------------------------------------------
+## Check if String contains Substring
+To check if a substring is present inside a string, we use the ``Contains()`` method of the Go ``strings`` package.
+
+Let's see an example,
+```
+// Program to illustrate the use of Contains()
+
+package main
+import (
+  "fmt"
+  "strings"
+)
+
+func main() {
+
+  text := "Go Programming"
+  substring1 := "Go"
+  substring2 := "Golang"
+
+  // check if Go is present in Go Programming
+  result := strings.Contains(text, substring1)
+  fmt.Println(result)
+
+  // check if Golang is present in Go Programming
+  result = strings.Contains(text, substring2)
+  fmt.Println(result)
+}
+```
+### Output
+```
+true
+false
+```
+Here, we get the output
+
+- ``true`` because the substring **"Go"** is present inside the string **"Go Programming"**
+- ``false`` because the substring **"Golang"** is not present inside the string **"Go Programming"**
