@@ -227,3 +227,47 @@ Here, we get the output
 
 - ``true`` because the substring **"Go"** is present inside the string **"Go Programming"**
 - ``false`` because the substring **"Golang"** is not present inside the string **"Go Programming"**
+-----------------------------------------------------------------------
+## Replace a String in Go
+To replace a string, we use the ``Replace()`` method present inside the strings package. For example,
+```
+// Program using Replace() to replace strings
+
+package main
+import (
+  "fmt"
+  "strings"
+)
+
+func main() {
+    
+  text := "car"
+  fmt.Println("Old String:", text)
+  
+  // replace r with t
+  replacedText := strings.Replace(text, "r", "t", 1)
+
+  fmt.Println("New String:", replacedText)
+}
+```
+### Output
+```
+Old String: car
+New String: cat
+```
+Notice the use of the ``Replace()`` method
+``strings.Replace(text, "r", "t", 1)``
+Here,
+
+- ``text`` - string where we perform the replace operation
+- ``"r"`` - old character that needs to be replaced
+- ``"t"`` - new character that replaces the old character
+- ``1`` - represents how many old characters to be replaced
+```
+Note : If we need to replace multiple characters, we can change the value of numbers from 1 to any other. For example,
+
+// replace 2 r with 2 a
+strings.Replace("Programiz", "r", "R", 2)
+
+// Output: PRogRamiz
+```
