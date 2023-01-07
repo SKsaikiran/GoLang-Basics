@@ -374,3 +374,36 @@ func main() {
   Note: The ``==`` operator is case sensitive. Hence, ``Programiz`` and ``programiz`` are not equal.
   ```
 </details>
+
+<details>
+<summary>Create Strings from a Slice</summary>
+<br>
+
+  In Go, we can also create a string by joining all the elements of a string slice. For example,
+  
+  ```
+  // Program to create a single string from slices of strings using Join()
+
+package main
+import (
+  "fmt"
+  "strings"
+)
+
+func main() {
+
+  // create a string slice
+  words := []string{"I", "love", "Golang"}
+
+  // join each element of the slice
+  message := strings.Join(words, " ")
+  fmt.Println(message)
+}
+
+// Output: I love Golang
+  ```
+  
+  Here, we have used the ``Join()`` method of the ``strings`` package to join each element of the slice.
+
+To learn more about slice, visit [Golang Slice]()
+</details>
