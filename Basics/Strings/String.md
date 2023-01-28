@@ -445,3 +445,46 @@ g
 </details>
 
 -------------------------------------------------------
+## Escape Sequence in Golang String
+We use escape characters to escape some of the characters present inside a string. For example,
+
+Suppose we need to include double quotes inside a string.
+
+```
+// include double quote
+message := "This article is about "String" in Go Programming."
+```
+Since strings are represented by double quotes, the compiler will treat ``"This article is about"`` as the string. Hence, the above code will cause an error.
+
+To solve this issue, we can use the escape character ``\`` in Go. For example,
+
+```
+// use the escape character
+message := "This article is about \"String\" in Go Programming."
+```
+Now, the escape characters tell the compiler to escape double quotes and read the whole text.
+## Example: Escape Sequence
+
+```
+package main
+import "fmt"
+
+func main() {
+
+  // use escape character in string
+  message := "This article is about \"String\" in Go Programming."
+
+  fmt.Println(message)
+}
+
+// Output: This article is about "String" in Go Programming.
+```
+```
+Note: \n and \t are other popular escape sequences that add a new line and tab inside a string.
+```
+--------------------------------
+## Go Strings are Immutable
+
+In Go, strings are immutable. This means once we create a string, we cannot change it.
+
+To understand it, consider an example,
