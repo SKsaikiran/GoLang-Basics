@@ -405,5 +405,41 @@ func main() {
   
   Here, we have used the ``Join()`` method of the ``strings`` package to join each element of the slice.
 
-To learn more about slice, visit [Golang Slice]()
+</details>
+
+<details>
+<summary>Loop Through Strings in Golang</summary>
+<br>
+We use for range loop to iterate through each character of a Golang string. For example,
+  
+```
+ // Program to iterate through a string
+
+package main
+import "fmt"
+ 
+func main() {    
+  text := "Golang"
+ 
+  // for range loop to iterate through a string
+  for _, character := range text  { 	 
+  fmt.Printf("%c\n", character)
+  }
+
+} 
+```  
+### Output 
+ ```
+G
+  
+o
+  
+l
+  
+a
+  
+n
+  
+g 
+```   
 </details>
