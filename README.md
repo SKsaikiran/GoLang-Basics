@@ -1,6 +1,6 @@
 # Learn-GoLang
 
 
-golang
+go lang
 
 
